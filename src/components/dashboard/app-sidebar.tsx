@@ -2,7 +2,6 @@
 
 import * as React from "react";
 
-import { NavDocuments } from "@/components/dashboard/nav-documents";
 import { NavMain } from "@/components/dashboard/nav-main";
 import { NavSecondary } from "@/components/dashboard/nav-secondary";
 import { NavUser } from "@/components/dashboard/nav-user";
@@ -19,7 +18,6 @@ import {
   LayoutDashboardIcon,
   CameraIcon,
   Settings2Icon,
-  DatabaseIcon,
   CommandIcon,
 } from "lucide-react";
 
@@ -61,13 +59,13 @@ const data = {
       icon: <Settings2Icon />,
     },
   ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: <DatabaseIcon />,
-    },
-  ],
+  // documents: [
+  //   {
+  //     name: "Data Library",
+  //     url: "#",
+  //     icon: <DatabaseIcon />,
+  //   },
+  // ],
 };
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -87,7 +85,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
+        {/* <NavDocuments items={data.documents} /> */}
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
