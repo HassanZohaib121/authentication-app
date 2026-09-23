@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/card";
 import {
   Field,
-  FieldDescription,
+  // FieldDescription,
   FieldGroup,
   FieldLabel,
 } from "@/components/ui/field";
@@ -109,15 +109,15 @@ export function LoginForm({
                 />
               </Field>
               <Field>
-                <div className="flex items-center">
-                  <FieldLabel htmlFor="password">Password</FieldLabel>
+                <FieldLabel htmlFor="password">Password</FieldLabel>
+                {/* <div className="flex items-center">
                   <a
                     href="#"
                     className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                   >
                     Forgot your password?
                   </a>
-                </div>
+                </div> */}
                 <Input
                   id="password"
                   type="password"
@@ -140,9 +140,9 @@ export function LoginForm({
                     {error}
                   </p>
                 )}
-                <FieldDescription className="text-center">
+                {/* <FieldDescription className="text-center">
                   Don&apos;t have an account? <a href="/signup">Sign up</a>
-                </FieldDescription>
+                </FieldDescription> */}
               </Field>
             </FieldGroup>
           </form>
