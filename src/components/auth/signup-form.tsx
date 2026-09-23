@@ -230,14 +230,14 @@ export function SignupForm(props: React.ComponentProps<typeof Card>) {
                   {loading ? "Creating Account..." : "Create Account"}
                 </Button>
 
-                <Button
+                {/* <Button
                   variant="outline"
                   type="button"
                   disabled={loading}
                   className="w-full"
                 >
                   Sign up with Google
-                </Button>
+                </Button> */}
 
                 <FieldDescription className="px-6 text-center">
                   Already have an account?{" "}

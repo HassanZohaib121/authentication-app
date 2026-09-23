@@ -132,9 +132,9 @@ export function LoginForm({
                 <Button type="submit" disabled={loading}>
                   {loading ? "Logging in..." : "Login"}
                 </Button>
-                <Button variant="outline" type="button" disabled={loading}>
+                {/* <Button variant="outline" type="button" disabled={loading}>
                   Login with Google
-                </Button>
+                </Button> */}
                 {error && (
                   <p className="text-sm text-destructive" role="alert">
                     {error}
