@@ -4,7 +4,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$Repo = "https://github.com/YOUR_USERNAME/tauri-auth-starter.git"
+$Repo = "https://github.com/HassanZohaib121/tauri-auth-starter.git"
 
 Write-Host ""
 Write-Host "============================================" -ForegroundColor Cyan

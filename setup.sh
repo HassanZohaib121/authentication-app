@@ -4,7 +4,7 @@ set -e
 
 PROJECT_NAME="${1:-my-tauri-app}"
 
-REPO="https://github.com/YOUR_USERNAME/tauri-auth-starter.git"
+REPO="https://github.com/HassanZohaib121/tauri-auth-starter.git"
 
 echo ""
 echo "============================================"

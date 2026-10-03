@@ -24,6 +24,47 @@ Install the following before starting development:
 
 The Rust toolchain version is documented in `src-tauri/Cargo.toml`.
 
+## Create a project with the setup scripts
+
+The setup scripts create a new project from the Tauri Authentication Starter repository. They clone it into a new directory, install the JavaScript dependencies, remove the starter's Git history, and initialize a new Git repository with an initial commit.
+
+Before running a script, make sure Git, Node.js 20 or newer, and npm are installed.
+
+### Windows (PowerShell)
+
+Run from the directory containing `setup.ps1`:
+
+```powershell
+.\setup.ps1
+```
+
+By default, the project is created in `my-tauri-app`. To choose a different directory:
+
+```powershell
+.\setup.ps1 -ProjectName my-project
+```
+
+### macOS, Linux, or Git Bash
+
+Run from the directory containing `setup.sh`:
+
+```bash
+bash ./setup.sh
+```
+
+By default, the project is created in `my-tauri-app`. Pass a directory name to use a different location:
+
+```bash
+bash ./setup.sh my-project
+```
+
+Both scripts stop if the target directory already exists. After setup, enter the new project directory and start the desktop app:
+
+```bash
+cd my-project
+npm run tauri dev
+```
+
 ## Run the app
 
 Install the JavaScript dependencies:
